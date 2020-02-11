@@ -1,10 +1,11 @@
 ﻿namespace Calculator
 {
+    /*
+    * Demonstrate Open Closed Principal
+    * Conforms to ICalculate inteface
+    */
     public class Subtract : ICalculate
     {
-        /*
-    * Demonstrate Open Closed Principal
-    */
         #region ICalculate Members 
 
         public int Calculate(int x, int y)

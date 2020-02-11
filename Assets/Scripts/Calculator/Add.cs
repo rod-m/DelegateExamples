@@ -4,6 +4,7 @@
     {
         /*
     * Demonstrate Open Closed Principal
+    * Conforms to ICalculate inteface
     */
         #region ICalculate Members 
 
