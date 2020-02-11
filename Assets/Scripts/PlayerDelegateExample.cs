@@ -91,7 +91,7 @@ public class PlayerDelegateExample : MonoBehaviour
         m_Material.color = (basicColour + fastColour) / 2;
         //m_Material.SetColor("_Color", (basicColour + fastColour) / 2);
         StartCoroutine(FadeIt(fastColour));
-        StartCoroutine(ShieldFade(PoweringUp));
+        StartCoroutine(ShieldFade(PoweringUp, 1.5f));
     }
 
     void ShieldOn()
@@ -100,7 +100,7 @@ public class PlayerDelegateExample : MonoBehaviour
         speed = speedNormal / 2;
         m_Material.color = shieldColour;
  
-        StartCoroutine(ShieldFade(ShieldOn));
+        StartCoroutine(ShieldFade(ShieldOn, 3f));
     }
 
     IEnumerator FadeIt(Color _color)
@@ -116,9 +116,9 @@ public class PlayerDelegateExample : MonoBehaviour
   
     }
     
-    IEnumerator ShieldFade(PlayerAbility _ability)
+    IEnumerator ShieldFade(PlayerAbility _ability, float _t)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(_t);
         _playerAbility -= _ability;
         //After we have waited 1 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
