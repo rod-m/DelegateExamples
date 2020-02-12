@@ -57,9 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Calculator\Add.cs" />
+    <Compile Include="Assets\Scripts\Calculator\CalculateOrig.cs" />
     <Compile Include="Assets\Scripts\Calculator\Calculations.cs" />
     <Compile Include="Assets\Scripts\Calculator\ICalculate.cs" />
     <Compile Include="Assets\Scripts\Calculator\Subtract.cs" />
+    <Compile Include="Assets\Scripts\GoHaywire.cs" />
+    <Compile Include="Assets\Scripts\Multiply.cs" />
     <Compile Include="Assets\Scripts\OpenClosedExamples.cs" />
     <Compile Include="Assets\Scripts\PlayerDelegateExample.cs" />
     <Compile Include="Assets\Scripts\VehicleTypes\Car.cs" />

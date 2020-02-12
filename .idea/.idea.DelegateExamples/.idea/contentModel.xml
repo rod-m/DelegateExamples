@@ -8,10 +8,13 @@
         <e p="Scripts" t="Include">
           <e p="Calculator" t="Include">
             <e p="Add.cs" t="Include" />
+            <e p="CalculateOrig.cs" t="Include" />
             <e p="Calculations.cs" t="Include" />
             <e p="ICalculate.cs" t="Include" />
             <e p="Subtract.cs" t="Include" />
           </e>
+          <e p="GoHaywire.cs" t="Include" />
+          <e p="Multiply.cs" t="Include" />
           <e p="OpenClosedExamples.cs" t="Include" />
           <e p="PlayerDelegateExample.cs" t="Include" />
           <e p="VehicleTypes" t="Include">

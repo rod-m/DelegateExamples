@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class PlayerDelegateExample : MonoBehaviour
 {
-    Material m_Material;    
+      // delegate 
     delegate void PlayerAbility();
+    private PlayerAbility _playerAbility;
+    
+    Material m_Material; 
     public Color noAbilityColour = Color.white;
     public Color basicColour = Color.black;
     public Color fastColour = Color.red;
@@ -16,7 +19,7 @@ public class PlayerDelegateExample : MonoBehaviour
     public float speedNormal = 5.0f;
     public float speedFast = 40.0f;
     public float rotationSpeed = 100.0f;
-    private PlayerAbility _playerAbility;
+    
     Vector3 m_EulerAngleVelocity;
     private Rigidbody rb;
     private IEnumerator coroutinePW;
