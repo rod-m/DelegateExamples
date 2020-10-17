@@ -171,6 +171,5 @@ public class PlayerDelegateExample : MonoBehaviour
         _playerAbility += PlayerMoving;
         Debug.Log("Player started at timestamp : " + Time.time);
         
-        //StopCoroutine(coroutinePW);
     }
 }
